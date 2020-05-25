@@ -66,6 +66,8 @@ metadata:
   labels:
     name: springboot
   name: springboot
+  annotations:
+    prometheus.io/scrape: 'true'
 spec:
   type: NodePort
   ports:
@@ -104,6 +106,8 @@ metadata:
   labels:
     name: petclinc
   name: petclinic
+  annotations:
+    prometheus.io/scrape: 'true'
 spec:
   type: NodePort
   ports:
@@ -150,6 +154,8 @@ metadata:
   labels:
     name: mongo
   name: mongo
+  annotations:
+    prometheus.io/scrape: 'true'
 spec:
   type: ClusterIP
   ports:
