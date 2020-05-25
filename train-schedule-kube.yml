@@ -33,7 +33,8 @@ spec:
     spec:
       containers:
       - name: train-schedule
-        image: linuxacademycontent/train-schedule:1
+        #image: linuxacademycontent/train-schedule:1
+        image: kaushikarvind/train-schedule
         ports:
         - containerPort: 8080
 ---
